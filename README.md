@@ -16,9 +16,10 @@ https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lectur
 
 ` ./node_modules/karma/bin/karma start `
 
-# Steps
+# Detail Steps
 ## 1. Enter the local project
-` cd desktop `  
+> Please download the original Lecture46 sample code first
+> 
 ` cd Lecture46 `
 ## 2. Install Angular dependencies (Don't skip!)
 ` npm install angular --save `  
