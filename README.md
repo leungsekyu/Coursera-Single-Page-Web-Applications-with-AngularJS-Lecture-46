@@ -9,6 +9,7 @@ A minimum implementation of Lecture46 in Karma.
 https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture46
 
 # How to test out of the box?
+## Terminal / CMD
 ` cd desktop `  
 ` git clone https://github.com/leungsekyu/Lecture46.git `  
 ` cd Lecture46 `  
@@ -32,7 +33,7 @@ https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lectur
 ` npm install karma-ng-html2js-preprocessor --save-dev `
 ## 4. Initialize karma.conf.js
 ` karma init `
-### Then replace the content with the following code snippet
+### Then replace the whole default content with the following code snippet
 ```
 module.exports = function (config) {
   config.set({
@@ -60,6 +61,29 @@ module.exports = function (config) {
 };
 ```
 ## 5. Modified ` shoppinglist.directive.spec.js `
+### Add `beforeEach(module('templates'));`
+```
+beforeEach(module('ShoppingListDirectiveApp'));
+beforeEach(module('templates'));
+```
+### Comment out
+```
+beforeEach(inject(function ($templateCache) {
+  var directiveTemplate = null;
+  var req = new XMLHttpRequest();
+  req.onload = function () {
+    directiveTemplate = this.responseText;
+  };
+
+  // Note that the relative path may be different from your unit test HTML file.
+  // Using `false` as the third parameter to open() makes the operation synchronous.
+  req.open('get', 'shoppingList.html', false);
+  req.send();
+  $templateCache.put('shoppingList.html', directiveTemplate);
+}));
+```
+## 6. Run test
+` ./node_modules/karma/bin/karma start `
 
 # Reference / Acknowledgments
 [Unit testing AngularJS applications](https://www.airpair.com/angularjs/posts/unit-testing-angularjs-applications)  
