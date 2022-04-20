@@ -25,14 +25,14 @@ https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lectur
 ` npm install angular-mocks --save-dev `
 ## 3. Install Karma dependencies
 ` npm install karma --save-dev `  
-### Testing framework // [Jasmine](http://jasmine.github.io/)
+### Testing framework // Jasmine
 ` npm install karma-jasmine jasmine-core --save-dev `  
 ### Browser launchers // Chrome or Firefox, for your preference
 ` npm install karma-chrome-launcher --save-dev `  
 ` npm install karma-firefox-launcher --save-dev `  
 ### Templates preprocessor // [ng-html2js](https://github.com/karma-runner/karma-ng-html2js-preprocessor)
 ` npm install karma-ng-html2js-preprocessor --save-dev `
-## 4. Initialize karma.conf.js
+## 4. Initialize ` karma.conf.js `
 ` karma init `
 ### Then replace the whole default content with the following code snippet
 ```
