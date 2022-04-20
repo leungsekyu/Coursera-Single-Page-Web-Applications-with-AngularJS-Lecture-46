@@ -8,7 +8,7 @@ A minimum implementation of Lecture46 in Karma.
 ## Code
 https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture46
 
-# How to test out of the box?
+# Test out-of-the-box
 ## Terminal / CMD
 ` cd desktop `  
 ` git clone https://github.com/leungsekyu/Lecture46.git `  
@@ -16,7 +16,7 @@ https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lectur
 
 ` ./node_modules/karma/bin/karma start `
 
-# Detail Steps
+# Detail steps
 ## 1. Enter the local project
 > Please download the original Lecture46 sample code first
 > 
@@ -63,7 +63,7 @@ module.exports = function (config) {
 };
 ```
 ## 5. Modified ` shoppinglist.directive.spec.js `
-### Add `beforeEach(module('templates'));`
+### Add ` beforeEach(module('templates')); `
 ```
 beforeEach(module('ShoppingListDirectiveApp'));
 beforeEach(module('templates'));
@@ -86,7 +86,7 @@ beforeEach(inject(function ($templateCache) {
 ```
 ## 6. Run test
 ` ./node_modules/karma/bin/karma start `
-### And it shall result like this
+### And it shall output like this
 <img src="https://cdn.jsdelivr.net/gh/leungsekyu/Image-Hosting/Lecture46_success.png" width="600" alt="success"/>
 
 # Reference / Acknowledgments
