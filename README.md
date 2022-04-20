@@ -18,7 +18,7 @@ https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lectur
 
 # Steps
 ## 1. Enter the local project
-` cd desktop `
+` cd desktop `  
 ` cd Lecture46 `
 ## 2. Install Angular dependencies (Don't skip!)
 ` npm install angular --save `  
