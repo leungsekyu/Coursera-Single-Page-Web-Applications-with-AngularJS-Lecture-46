@@ -84,9 +84,8 @@ beforeEach(inject(function ($templateCache) {
 ```
 ## 6. Run test
 ` ./node_modules/karma/bin/karma start `
-### And it shall look like this
-<img src="https://cdn.jsdelivr.net/gh/leungsekyu/Image-Hosting/Lecture46_success.png" width="480" alt="success"/>
-<!-- ![success](https://cdn.jsdelivr.net/gh/leungsekyu/Image-Hosting/Lecture46_success.png) -->
+### And it shall result like this
+<img src="https://cdn.jsdelivr.net/gh/leungsekyu/Image-Hosting/Lecture46_success.png" width="500" alt="success"/>
 
 # Reference / Acknowledgments
 [Unit testing AngularJS applications](https://www.airpair.com/angularjs/posts/unit-testing-angularjs-applications)  
