@@ -21,9 +21,9 @@ https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lectur
 > Please download the original Lecture46 sample code first
 > 
 ` cd Lecture46 `
-## 2. Install Angular dependencies (Don't skip!)
-` npm install angular --save `  
-` npm install angular-mocks --save-dev `
+## ~ 2. Install Angular dependencies (Don't skip!) ~
+~ ` npm install angular --save ` ~  
+~ ` npm install angular-mocks --save-dev ` ~
 ## 3. Install Karma dependencies
 ` npm install karma --save-dev `  
 ### Testing framework // Jasmine
