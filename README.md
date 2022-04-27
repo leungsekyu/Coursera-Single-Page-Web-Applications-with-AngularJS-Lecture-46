@@ -6,7 +6,7 @@ A minimum implementation of Lecture46 in Karma.
 [Lecture 46, Part 1: Testing AngularJS Directives](https://www.coursera.org/learn/single-page-web-apps-with-angularjs/lecture/gPEYm/lecture-46-part-1-testing-angularjs-directives)  
 [Lecture 46, Part 2: Testing AngularJS Directives](https://www.coursera.org/learn/single-page-web-apps-with-angularjs/lecture/50zV5/lecture-46-part-2-testing-angularjs-directives)
 ## Code
-https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture46
+[Lecture46](https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lecture46)
 
 # Test out-of-the-box
 ## Terminal / CMD
@@ -81,6 +81,21 @@ beforeEach(inject(function ($templateCache) {
 ### And it shall output like this
 <img src="https://cdn.jsdelivr.net/gh/leungsekyu/Image-Hosting/Lecture46_success.png" width="600" alt="success"/>
 
-# Reference / Acknowledgments
-[Unit testing AngularJS applications](https://www.airpair.com/angularjs/posts/unit-testing-angularjs-applications)  
+# Reference / Acknowledgement
+## Tutorial
+[Unit testing AngularJS applications](https://www.airpair.com/angularjs/posts/unit-testing-angularjs-applications)
+
+## Issues
+### karma
+> karma should NOT be installed globally, it will not work! Install ` karma-cli ` if you want a global cmd and install karma + plugins locally
+
+[Karma cant find the npm modules #1488](https://github.com/karma-runner/karma/issues/1488)  
 [Karma Installation](http://karma-runner.github.io/0.12/intro/installation.html)
+### karma.conf.js
+> By default Karma will load plugins from all installed NPM packages matching ‘karma-*’, but you have changed it by asking to only load plugins from the single package, hence the error. Either remove plugins key completely or list all plugins you need.
+
+[Server start failed, No provider for "framework:jasmine" #3506](https://github.com/karma-runner/karma/issues/3506)
+### karma-ng-html2js-preprocessor
+> It needs to be installed locally
+
+[missing plugin error #66](https://github.com/karma-runner/karma-ng-html2js-preprocessor/issues/66)
