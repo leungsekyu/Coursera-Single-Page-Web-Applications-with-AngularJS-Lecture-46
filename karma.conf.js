@@ -2,12 +2,7 @@ module.exports = function (config) {
   config.set({
     frameworks: ['jasmine'],
 
-    files: [
-      'node_modules/angular/angular.js',
-      'node_modules/angular-mocks/angular-mocks.js',
-      '*.js',
-      '*.html',
-    ],
+    files: ['lib/angular.min.js', 'lib/angular-mocks.js', '*.js', '*.html'],
 
     preprocessors: {
       '*.html': ['ng-html2js'],

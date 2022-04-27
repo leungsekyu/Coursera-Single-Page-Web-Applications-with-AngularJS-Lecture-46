@@ -27,18 +27,18 @@ describe('shoppingList directive', function () {
     $rootScope = _$rootScope_;
   }));
 
-  // beforeEach(inject(function($templateCache) {
+  // beforeEach(inject(function ($templateCache) {
   //   var directiveTemplate = null;
   //   var req = new XMLHttpRequest();
-  //   req.onload = function() {
-  //       directiveTemplate = this.responseText;
+  //   req.onload = function () {
+  //     directiveTemplate = this.responseText;
   //   };
 
   //   // Note that the relative path may be different from your unit test HTML file.
   //   // Using `false` as the third parameter to open() makes the operation synchronous.
-  //   req.open("get", "shoppingList.html", false);
+  //   req.open('get', 'shoppingList.html', false);
   //   req.send();
-  //   $templateCache.put("shoppingList.html", directiveTemplate);
+  //   $templateCache.put('shoppingList.html', directiveTemplate);
   // }));
 
   it('Replaces the element with the appropriate content', function () {
