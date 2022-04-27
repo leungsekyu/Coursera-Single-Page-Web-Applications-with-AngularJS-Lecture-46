@@ -21,10 +21,7 @@ https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lectur
 > Please download the original Lecture46 sample code first
 > 
 ` cd Lecture46 `
-## ~ 2. Install Angular dependencies (Don't skip!) ~
-~ ` npm install angular --save ` ~  
-~ ` npm install angular-mocks --save-dev ` ~
-## 3. Install Karma dependencies
+## 2. Install Karma dependencies
 ` npm install karma --save-dev `  
 ### Testing framework // Jasmine
 ` npm install karma-jasmine jasmine-core --save-dev `  
@@ -33,7 +30,7 @@ https://github.com/jhu-ep-coursera/fullstack-course5/tree/master/examples/Lectur
 ` npm install karma-firefox-launcher --save-dev `  
 ### Templates preprocessor // [ng-html2js](https://github.com/karma-runner/karma-ng-html2js-preprocessor)
 ` npm install karma-ng-html2js-preprocessor --save-dev `
-## 4. Initialize ` karma.conf.js `
+## 3. Initialize ` karma.conf.js `
 ` karma init `
 ### Then replace the whole default content with the following code snippet
 ```
@@ -41,12 +38,7 @@ module.exports = function (config) {
   config.set({
     frameworks: ['jasmine'],
 
-    files: [
-      'node_modules/angular/angular.js',
-      'node_modules/angular-mocks/angular-mocks.js',
-      '*.js',
-      '*.html',
-    ],
+    files: ['lib/angular.min.js', 'lib/angular-mocks.js', '*.js', '*.html'],
 
     preprocessors: {
       '*.html': ['ng-html2js'],
