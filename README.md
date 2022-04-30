@@ -1,5 +1,5 @@
 # Description
-A minimum implementation of Lecture46 in Karma.
+A minimum implementation of Lecture46 with Karma.
 
 # Source
 ## Lecture
