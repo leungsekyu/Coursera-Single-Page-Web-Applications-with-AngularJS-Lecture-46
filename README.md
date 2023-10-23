@@ -1,5 +1,5 @@
 # Description
-A minimum implementation of Lecture46 with Karma.
+A minimum implementation of Coursera Single Page Web Applications with AngularJS Lecture 46 with **Karma**.
 
 # Source
 ## Lecture
@@ -11,8 +11,8 @@ A minimum implementation of Lecture46 with Karma.
 # Test out-of-the-box
 ## Terminal / CMD
 ` cd desktop `  
-` git clone https://github.com/leungsekyu/Lecture46.git `  
-` cd Lecture46 `  
+` git clone https://github.com/leungsekyu/Coursera-Single-Page-Web-Applications-with-AngularJS-Lecture-46.git `  
+` cd Coursera-Single-Page-Web-Applications-with-AngularJS-Lecture-46 `  
 
 ` ./node_modules/karma/bin/karma start `
 
