@@ -1,5 +1,5 @@
 # Description
-A minimum implementation of Coursera Single Page Web Applications with AngularJS Lecture 46 with **Karma**.
+A minimum implementation of Coursera's *Single Page Web Applications with AngularJS* lecture 46 with **Karma**.
 
 # Source
 ## Lecture
